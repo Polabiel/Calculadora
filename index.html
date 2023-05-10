@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Online</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <div class="container">
+            <div class="display">
+                <input type="text" id="numDisplay">
+            </div>
+            <div class="buttons">
+                <table>
+                      <tr>
+                        <td class="btn" onclick="clearDisplay()">CE</td>
+                        <td class="btn" onclick="valueAdd('%')">%</td>
+                        <td class="btn" onclick="valueAdd('/')">/</td>
+                        <td class="btn" onclick="valueAdd('*')">*</td>
+                      </tr>
+                      <tr>
+                        <td class="btn" onclick="sumFunciton(7)">7</td>
+                        <td class="btn" onclick="sumFunciton(8)">8</td>
+                        <td class="btn" onclick="sumFunciton(9)">9</td>
+                        <td class="btn" onclick="valueAdd('-')">-</td>
+                      </tr>
+                      <tr>
+                        <td class="btn" onclick="sumFunciton(4)">4</td>
+                        <td class="btn" onclick="sumFunciton(5)">5</td>
+                        <td class="btn" onclick="sumFunciton(6)">6</td>
+                        <td class="btn" onclick="valueAdd('+')">+</td>
+                      </tr>
+                      <tr>
+                        <td class="btn" onclick="sumFunciton(1)">1</td>
+                        <td class="btn" onclick="sumFunciton(2)">2</td>
+                        <td class="btn" onclick="sumFunciton(3)">3</td>
+                        <td class="btn" onclick="calculate()">=</td>
+                      </tr>
+                      <tr>
+                        <td class="btn" onclick="sumFunciton(0)">0</td>
+                        <td class="btn" colspan="3" onclick="deleteNumber()">Apagar</td>
+                      </tr>
+                  </table>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
